@@ -5,9 +5,7 @@ def apply_theme():
     st.markdown(
         """
 <style>
-/* =========================
-   SANAD CANVA DARK THEME
-========================= */
+
 
 :root{
   --bg-main:#0B1F1B;
@@ -170,12 +168,6 @@ iframe{
 }
 
 
-
-/* =========================
-   FORCE STREAMLIT BUTTON COLORS (NO BLACK)
-========================= */
-
-/* كل أزرار Streamlit */
 div.stButton > button,
 [data-testid="stFileUploader"] button,
 [data-testid="baseButton-secondary"],
@@ -187,7 +179,6 @@ div.stButton > button,
   font-weight: 900 !important;
 }
 
-/* الأزرار الأساسية (Primary) */
 div.stButton > button[kind="primary"],
 [data-testid="baseButton-primary"]{
   background: linear-gradient(135deg,#5FAF9E,#7CCFC1) !important;
@@ -211,11 +202,7 @@ div.stButton > button:hover,
 }
 
 
-/* =========================
-   HARD FIX: Search TextInput (BaseWeb) — NO BLACK
-========================= */
 
-/* 1) يمسك معظم نسخ Streamlit */
 .stTextInput input,
 [data-testid="stTextInput"] input,
 input[type="text"]{
@@ -226,7 +213,6 @@ input[type="text"]{
   font-weight: 850 !important;
 }
 
-/* 2) يمسك BaseWeb input (الأهم في نسخ كثيرة) */
 div[data-baseweb="input"] input{
   background: rgba(95,175,158,0.12) !important;
   border: 1px solid rgba(159,227,214,0.55) !important;
@@ -251,21 +237,15 @@ div[data-baseweb="input"] input:focus{
   outline: none !important;
 }
 
-/* أحيانًا الأسود يكون من wrapper حق BaseWeb */
 div[data-baseweb="input"]{
   background: transparent !important;
 }
 
-/* لو الخلفية السوداء جاية من container حوالين الحقل */
 [data-testid="stTextInput"]{
   background: transparent !important;
 }
 
 
-
-/* =========================
-   Stage 2 Results Cards
-========================= */
 .sg-res{
   border: 1px solid rgba(159,227,214,0.22);
   background: rgba(10, 18, 23, 0.62);
