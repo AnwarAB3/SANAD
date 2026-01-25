@@ -98,8 +98,6 @@ SANAD/
 │   ├── state.py               # Session state management
 │   └── ui_components.py       # Reusable UI elements
 │
-├── data/
-│   └── (optional test files)
 │
 ├── requirements.txt
 └── README.md
