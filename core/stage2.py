@@ -8,10 +8,6 @@ from core.review import (
     try_extract_from_sld,
 )
 
-
-# ==========================
-# Styling (CSS only)
-# ==========================
 def _inject_css():
     st.markdown(
         """
@@ -133,7 +129,6 @@ def _clean_lines(lines):
         s = str(x).strip()
         if not s:
             continue
-        # prevent stray html-ish tokens
         if s.lower() in ("</div>", "<div>", "</span>", "<span>"):
             continue
         if s.startswith("<") and s.endswith(">"):
@@ -184,9 +179,7 @@ def render_kpis(items):
             )
 
 
-# ==========================
-# Stage 2 main
-# ==========================
+
 def render_stage2():
     _inject_css()
 
