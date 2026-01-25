@@ -183,10 +183,10 @@ Final responsibility remains with the licensed design engineer and relevant regu
 
 ## Project Status
 
-✅ Functional prototype
-✅ Engineering logic validated
-✅ Corporate-ready UI
-🚧 Advanced automation under future development
+Functional prototype
+Engineering logic validated
+Corporate-ready UI
+Advanced automation under future development
 
 ---
 
