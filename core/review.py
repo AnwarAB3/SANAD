@@ -255,7 +255,7 @@ def saudi_standards_snapshot(
     compliant = []
     gaps = []
 
-    # SEC / IEC 62548 / IEC 60364 / labeling / protection – snapshot style
+    # SEC / IEC 62548 / IEC 60364 / labeling / protection 
     if climate_ok:
         compliant.append(
             "String sizing vs minimum temperature (overvoltage) check passed."
@@ -275,7 +275,6 @@ def saudi_standards_snapshot(
     else:
         gaps.append("BoM and SLD values mismatch. Resolve before procurement/approval.")
 
-    # Always gaps unless provided in inputs (prototype stage)
     gaps.extend(
         [
             "Protection coordination (DC fuses/breakers, SPD type and ratings) not validated from current inputs.",
